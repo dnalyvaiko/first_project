@@ -1,0 +1,28 @@
+{
+  "name": "first_own_site",
+  "version": "1.0.0",
+  "description": "My first own work with Gulp",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dnalyvaiko/first_project.git"
+  },
+  "author": "Dmytro Nalyvaiko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dnalyvaiko/first_project/issues"
+  },
+  "homepage": "https://github.com/dnalyvaiko/first_project#readme",
+  "devDependencies": {
+    "connect": "^3.4.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-livereload": "^3.8.1",
+    "gulp.spritesmith": "^6.2.1",
+    "serve-static": "^1.11.1"
+  }
+}
