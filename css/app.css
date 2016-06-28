@@ -1,0 +1,8 @@
+span {
+  font-size: 65px;
+  color: red;
+}
+
+span:hover {
+  color: green;
+}
