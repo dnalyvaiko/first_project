@@ -58,6 +58,7 @@ gulp.task('build', ['clean', 'img', 'sass'], function(){
 
   var buildCss = gulp.src([
       'app/css/main.css',
+      'app/css/media.css',
       'app/css/bootstrap.min.css',
       'app/css/animation.css',
       'app/css/fontello.css',
