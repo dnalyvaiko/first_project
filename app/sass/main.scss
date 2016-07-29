@@ -26,8 +26,9 @@ header {
   background-image: url(../img/header.jpg);
   background-position: top center;
   background-size: cover;
-  min-height: 800px;
+  height: 100vh;
   width: 100%;
+  position:relative;
     .container-fluid {
       position: relative;
       padding-right: 100px;
@@ -85,9 +86,87 @@ header {
     }
 }
 
+.main-header {
+  width: 450px;
+  position: absolute;
+  left: 50%;
+  bottom: 35vh;
+  margin: 0 0 0 -225px;
+  color: #fff;
+  text-align: center;
+  font-family: "OpenSans";
+  letter-spacing: 2px;
+    h1 {
+      font-size: 60px;
+    }
+    #bold-header {
+      font-weight: 900;
+    }
+    h2 {
+      font-size: 35px;
+      margin: 10px 0 20px;
+    }
+    #style-header {
+      color: #27d38e;
+    }
+    .header-paragraph {
+      display: block;
+      line-height: 20px;
+      margin: 0 auto;
+      width: 408px;
+      height: 20px;
+        .header-line {
+          bottom: 5px;
+          width: 30px;
+          height: 1px;
+          background-color: #27d38e;
+          margin: 10px 0;
+        }
+        .paragraph p {
+          margin: 0 20px;
+          font-size: 20px;
+        }
+        .header-line, .paragraph {
+          display: inline-block;
+          float: left;
+        }
+    }
+}
+
+.social-header {
+  width: 250px;
+  position: absolute;
+  left: 50%;
+  bottom: 5vh;
+  margin: 0 0 0 -125px;
+  text-align: center;
+    .icon {
+      font-size: 25px;
+      color: #67655f;
+    }
+}
+.social-header .icon:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
 
 // SECTIONS //
 
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display:none;
+}
+
+#features>a#back-to-top:active,
+#features>a#back-to-top:focus {
+  background-color: #27d38e;
+  border-color: #27d38e;
+  color: #fff;
+}
 
 section {
   padding: 75px 0 50px;
@@ -124,7 +203,34 @@ section {
     }
 }
 
-.section-first {
+#features {
   min-height: 470px;
   background-color: #f4f7f9;
+  position: relative;
+}
+
+#slider {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -600px;
+  width: 1200px;
+    .carousel-inner {
+        .item {
+          height: 250px;
+          color: $text-color;
+            .container {
+                .carousel-caption {
+                    .row {
+                        .col-sm-6 .col-md-4 {
+                            .icon-features, .slide-info {
+                              display: inline-block;
+                              float: left;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

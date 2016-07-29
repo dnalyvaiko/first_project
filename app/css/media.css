@@ -17,7 +17,38 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
+  .main-header {
+    max-width: 300px;
+    margin: 30vh 0 0 -150px;
+    letter-spacing: 1px;
+  }
+  .main-header h1 {
+    font-size: 45px;
+  }
+  .main-header h2 {
+    font-size: 21px;
+    margin: 10px 0 20px;
+  }
+  .main-header .header-paragraph {
+    width: 276px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 0 0 20px;
+  }
+  .main-header .header-paragraph .header-line {
+    bottom: 3px;
+    width: 22px;
+    margin: 9px 0;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .main-header .header-paragraph .paragraph p {
+    font-size: 13px;
+    margin: 0 8px;
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
 
 /* Extra Small Devices, Phones */
